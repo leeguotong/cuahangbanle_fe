@@ -1,0 +1,66 @@
+<main>
+  
+    <header *ngIf="isLoggedIn">
+      <!-- <h1 class="brand">App Name</h1>
+      <nav>
+        <a href="/" class="nav-link">Home</a>
+        <a href="/hanghoa" class="nav-link">Hàng hóa</a>
+        <a *ngIf="isAdmin" href="/kho" class="nav-link">Kho</a>
+        <a *ngIf="isAdmin" href="/khachhang" class="nav-link">Khách Hàng</a>
+        <button (click)="logOut()">Log out</button>
+      </nav> -->
+      <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">QL Cửa Hàng Bán Lẻ</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar"> <!-- collapse navbar-collapse -->
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a href="/" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a  href="/hanghoa" class="nav-link">Hàng hóa</a>
+              </li>
+              <li class="nav-item">
+                <a *ngIf="isAdmin" href="/kho" class="nav-link">Kho</a>
+              </li>
+              <li class="nav-item">
+                <a *ngIf="isAdmin" href="/khachhang" class="nav-link">Khách Hàng</a>
+              </li>
+            </ul>
+            <button class="btn btn-secondary" (click)="logOut()">Log out</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <header *ngIf="!isLoggedIn">
+      <!-- <div class="row">
+        <div class="col-md-3 mb-2 mb-md-0 text-dark">
+          <p>App Name</p>
+        </div>
+          <div class="col-md-3 text-end">
+            <a href="" class="nav-link">Home</a>
+          </div>
+      </div> -->
+    
+      <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">QL Cửa Hàng Bán Lẻ</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a href="/" class="nav-link">Home</a>
+              </li>
+            </ul>
+            <button class="btn btn-secondary" (click)="logIn()">Log in</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    </main>

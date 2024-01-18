@@ -1,0 +1,17 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 col-xl-4 mt-3" *ngFor="let hanghoa of data">
+            <div class="card" style="width:100%">
+                <img class="card-img-top" src="../../assets/ASUS1.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">{{hanghoa.tensp}}</h4>
+                    <p class="card-text product-price">{{hanghoa.donGia}}</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary" style="margin-right: 5px;">Thêm Vào Giỏ Hàng</a>
+                        <a href="#" class="btn btn-success">Mua Ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
