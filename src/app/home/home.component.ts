@@ -11,10 +11,16 @@ const apiUrl = 'http://localhost:8080/cuahangbanle/hanghoas';
 export class HomeComponent implements OnInit {
   httpClient = inject(HttpClient);
   data: any[] = [];
+  page = 1;
+  pageSize = 6;
+  imageUrl: string[] = [];
   hanghoa = {
     tenHang:'',
     donGia: 0,
   };
+
+
+
   ngOnInit(): void {
     this.fetchData()
   }

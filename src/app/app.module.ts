@@ -12,6 +12,8 @@ import { KhachhangComponent } from './khachhang/khachhang.component';
 import { KhoComponent } from './kho/kho.component';
 import { RouterModule, provideRouter } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { ImgComponent } from './hanghoa/img/img.component';
+import { NgbAlertModule, NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -21,13 +23,17 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     HanghoaComponent,
     KhachhangComponent,
-    KhoComponent
+    KhoComponent,
+    ImgComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbPaginationModule,
+    NgbAlertModule,
+    NgbModule
   ],
   providers: [
     provideClientHydration()
