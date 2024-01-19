@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 const apiUrl = 'http://localhost:8080/cuahangbanle/hanghoas';
@@ -20,7 +21,7 @@ export class HomeComponent implements OnInit {
   };
 
 
-
+  constructor(private router: Router) {}
   ngOnInit(): void {
     this.fetchData()
   }
@@ -30,5 +31,10 @@ export class HomeComponent implements OnInit {
 			this.data = data;
 		})
 	}
-
+  xemchitiet(mahh:string){
+    console.log(mahh);
+    this.router.navigate(['/chitiethh',mahh]).then(()=>{
+      window.location.reload()
+    });
+  }
 }

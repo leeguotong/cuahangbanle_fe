@@ -2,14 +2,15 @@
     <div class="row">
         <div class="col-md-6 col-xl-4 mt-3" *ngFor="let hanghoa of data | slice: (page-1) * pageSize : page * pageSize; track item">
             <div class="card" style="width:100%">
-                <img class="card-img-top" src="../../assets/ASUS1.jpg" [src]="" alt="Card image">
+                <img class="card-img-top" src="../../assets/vegetables.jpg" [src]="" alt="Card image">
                 <!-- <app-img [img]="hanghoa.hinh"></app-img> -->
                 <div class="card-body">
                     <h4 class="card-title">{{hanghoa.tensp}}</h4>
                     <p class="card-text product-price">{{hanghoa.donGia}}</p>
                     <div class="text-center">
                         <a href="#" class="btn btn-primary" style="margin-right: 5px;">Thêm Vào Giỏ Hàng</a>
-                        <a href="#" class="btn btn-success">Mua Ngay</a>
+                        <a href="#" class="btn btn-success" style="margin-right: 5px;">Mua Ngay</a>
+                        <button type="button" class="btn btn-secondary" (click)="xemchitiet(hanghoa.mahh)">Chi tiết</button>
                     </div>
                 </div>
             </div>

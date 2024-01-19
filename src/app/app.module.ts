@@ -13,7 +13,8 @@ import { KhoComponent } from './kho/kho.component';
 import { RouterModule, provideRouter } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ImgComponent } from './hanghoa/img/img.component';
-import { NgbAlertModule, NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbAlertModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
+import { ChitietComponent } from './hanghoa/chitiet/chitiet.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { NgbAlertModule, NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng
     KhachhangComponent,
     KhoComponent,
     ImgComponent,
+    ChitietComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,6 @@ import { NgbAlertModule, NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng
     HttpClientModule,
     NgbPaginationModule,
     NgbAlertModule,
-    NgbModule
   ],
   providers: [
     provideClientHydration()

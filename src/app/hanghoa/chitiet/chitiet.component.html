@@ -1,0 +1,23 @@
+<section class="py-5 bg-light">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="../../../assets/vegetables.jpg" alt="..." /></div>
+            <div class="col-md-6">
+                <div class="small mb-1">Mã hàng hóa: {{mahh}}</div>
+                <h1 class="display-5 fw-bolder">{{hanghoa.tenHang}}</h1>
+                <div class="fs-5 mb-5">
+                    <span class="text-decoration-line-through text-secondary">${{hanghoa.donGia + 100}}</span>
+                    <span class="text-danger"> ${{hanghoa.donGia}}</span>
+                </div>
+                <p class="lead">Rau là một loại hàng hóa thiết yếu và không thể thiếu trong đời sống hàng ngày của con người. Với sự phong phú và đa dạng, rau đã trở thành một nguồn cung cấp dinh dưỡng quan trọng, đảm bảo sức khỏe và sự phát triển của chúng ta.</p>
+                <div class="d-flex">
+                    <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                    <button class="btn btn-outline-dark flex-shrink-0 btn-success text-white" style="border-color: green;" type="button">
+                        <i class="bi-cart-fill me-1"></i>
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

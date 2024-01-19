@@ -6,9 +6,11 @@ import { KhachhangComponent } from './khachhang/khachhang.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AdminRouter } from './router/admin.router';
+import { ChitietComponent } from './hanghoa/chitiet/chitiet.component';
 
 const routes: Routes = [
   { path: 'hanghoa', component: HanghoaComponent },
+  { path: 'chitiethh/:mahh', component: ChitietComponent },
 	{ path: 'kho', component: KhoComponent, canActivate: [AdminRouter]},
 	{ path: 'khachhang', component: KhachhangComponent,canActivate: [AdminRouter] },
   { path: 'login', component: LoginComponent }, // Thêm route cho trang đăng nhập
